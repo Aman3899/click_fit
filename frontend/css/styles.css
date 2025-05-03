@@ -1,0 +1,48 @@
+body {
+    padding-top: 56px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x600.png?text=Fitness+Banner') no-repeat center center;
+    background-size: cover;
+    height: 70vh;
+    color: #fff;
+}
+
+
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#features .card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#features .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#api-content .card {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#upload-feedback {
+    font-weight: bold;
+}
+.text-success {
+    color: green;
+}
+.text-danger {
+    color: red;
+}
